@@ -233,7 +233,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "../ns-3.27/ns-3.27/build";
+				LIBRARY_SEARCH_PATHS = "../ns-3.27/ns-3.27/build";
+				OTHER_LDFLAGS = (
+					"-lns3.27-core-optimized",
+					"-lns3.27-mesh-optimized",
+					"-lns3.27-wifi-optimized",
+					"-lns3.27-network-optimized",
+					"-lns3.27-internet-optimized",
+					"-lns3.27-mobility-optimized",
+					"-lns3.27-applications-optimized",
+					"-lns3.27-point-to-point-optimized",
+					"-lns3.27-stats-optimized",
+					"-lns3.27-csma-optimized",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-w";
 			};
 			name = Debug;
 		};
@@ -241,7 +256,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "../ns-3.27/ns-3.27/build";
+				LIBRARY_SEARCH_PATHS = "../ns-3.27/ns-3.27/build";
+				OTHER_LDFLAGS = (
+					"-lns3.27-core-optimized",
+					"-lns3.27-mesh-optimized",
+					"-lns3.27-wifi-optimized",
+					"-lns3.27-network-optimized",
+					"-lns3.27-internet-optimized",
+					"-lns3.27-mobility-optimized",
+					"-lns3.27-applications-optimized",
+					"-lns3.27-point-to-point-optimized",
+					"-lns3.27-stats-optimized",
+					"-lns3.27-csma-optimized",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-w";
 			};
 			name = Release;
 		};
